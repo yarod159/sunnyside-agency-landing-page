@@ -13,103 +13,201 @@
     />
     <link rel="stylesheet" href="style.css" />
     <title>Sunnyside agency landing page</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
   </head>
+
   <body>
     <div class="container">
       <!----------------------HEADER--------------------------->
       <header>
         <nav class="navbar">
           <img src="../images/logo.svg" alt="" />
-          <ul class="item-nav">
+        
+          <ul class="item-nav item-nav-responsive">
             <li><a href="">About</a></li>
             <li><a href=""> Services</a></li>
             <li><a href=""> Projects</a></li>
             <li><button class="btn">CONTACT</button></li>
+            
           </ul>
+
+          <img id="hamburger" class="icon-hamburger" src="../images/icon-hamburger.svg" alt="">
         </nav>
+
+        <ul class="item-nav-responsive-movil">
+          <li><a href="">About</a></li>
+          <li><a href=""> Services</a></li>
+          <li><a href=""> Projects</a></li>
+          <li><button class="btn-movil">CONTACT</button></li>
+          
+        </ul>
+        
 
         <div class="title-nav"><h1>We are creatives</h1></div>
         <div class="nav-arrow">
           <img src="../images/icon-arrow-down.svg" alt="" />
         </div>
+        <img
+          src="../images/mobile/image-header.jpg"
+          alt=""
+          class="responsive-image"
+        />
       </header>
+
       <!----------------------/HEADER--------------------------->
 
       <!----------------------section-transform--------------------------->
       <main>
         <section class="section-transform">
           <div class="section-transform-flex">
+            <div class="section-transform-img">
+              <img src="../images/desktop/image-transform.jpg" alt="" />
+            </div>
+
             <div class="section-left">
-              <h2>
+              <h2 class="section-left-title">
                 Transform your <br />
                 brand
               </h2>
-              <p>
+              <p class="section-left-text">
                 We are a full-service creative agency specializing in helping
                 brands grow fast. Engage your clients through compelling visuals
                 that do most of the marketing for you.
               </p>
               <span> Learn more</span>
             </div>
-            <div class="section-rigth">
+          </div>
+        </section>
+
+        <section class="section-transform">
+          <div class="section-transform-flex section-transform-invert">
+            <div class="section-transform-img">
+              <img src="../images/desktop/image-stand-out.jpg" alt="" />
+            </div>
+            <div class="section-left">
+              <h2 class="section-left-title">
+                Stand out to the right <br />
+                audience
+              </h2>
+              <p class="section-left-text">
+                Using a collaborative formula of designers, researchers,
+                photographers, videographers, and copywriters, we’ll build and
+                extend your brand in digital places.
+              </p>
+              <span> Learn more</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="section-transform section-transform-background">
+          <div class="section-transform-flex">
+            <div class="section_orange_cherry background-verde">
+              <div class="section-transform-img section-center">
+                <img class="responsive-image" src="../images/mobile/image-graphic-design.jpg" alt="" />
+                <h3 class="text-color-1">Graphic design</h3>
+                <p class="text-green">
+                  Great design makes you memorable. We deliver artwork that
+                  underscores your brand message and captures potential clients’
+                  attention.
+                </p>
+              </div>
+            </div>
+            <div class="section_orange_cherry background-azul">
+              <div class="section-transform-img section-center">
+                <img    class="responsive-image" src="../images/mobile/image-photography.jpg" alt="" />
+                <h3 class="text-color-2">Photography</h3>
+                <p class="text-blue">
+                  Increase your credibility by getting the most stunning,
+                  high-quality photos that improve your business image.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="testimonials">
+          <h2>Client testimonials</h2>
+          <div class="testimonials-wrapper">
+            <div class="client">
+              <img src="../images/image-emily.jpg" alt="" />
+              <p>
+                We put our trust in Sunnyside and they delivered, making sure
+                our needs were met and deadlines were always hit.
+              </p>
+
+              <div>
+                <h3>Emily R.</h3>
+                <span> Marketing Director</span>
+              </div>
+            </div>
+
+            <div class="client">
+              <img src="../images/image-thomas.jpg" alt="" />
+              <p>
+                Sunnyside’s enthusiasm coupled with their keen interest in our
+                brand’s success made it a satisfying and enjoyable experience.
+              </p>
+              <div>
+                <h3>Thomas S.</h3>
+                <span>Chief Operating Officer</span>
+              </div>
+            </div>
+
+            <div class="client">
+              <img src="../images/image-jennie.jpg" alt="" />
+              <p>
+                Incredible end result! Our sales increased over 400% when we
+                worked with Sunnyside. Highly recommended!
+              </p>
+              <div>
+                <h3>Jennie F.</h3>
+                <span> Business Owner </span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div class="collages">
+            <div class="collage">
               <img
-                class="section-transform-img"
-                src="../images/desktop/image-transform.jpg"
+                src="../images/desktop/image-gallery-milkbottles.jpg"
+                alt=""
+              />
+            </div>
+            <div class="collage">
+              <img src="../images/desktop/image-gallery-orange.jpg" alt="" />
+            </div>
+            <div class="collage">
+              <img src="../images/desktop/image-gallery-cone.jpg" alt="" />
+            </div>
+            <div class="collage">
+              <img
+                src="../images/desktop/image-gallery-sugarcubes.jpg"
                 alt=""
               />
             </div>
           </div>
         </section>
-        <!----------------------/section-transform-------------------------->
       </main>
+
+      <footer>
+        <div class="footer_container">
+          <div class="footer_logo"><img src="../images/logo.svg" alt="" /></div>
+          <div class="footer_center">
+            <span><a href=""> About</a></span>
+            <span><a href=""> Services</a></span>
+            <span><a href=""> Projects</a></span>
+          </div>
+
+          <div class="footer_center">
+            <img src="../images/icon-facebook.svg" alt="" />
+            <img src="../images/icon-instagram.svg" alt="" />
+            <img src="../images/icon-twitter.svg" alt="" />
+            <img src="../images/icon-pinterest.svg" alt="" />
+          </div>
+        </div>
+      </footer>
     </div>
-
-    
- 
- Learn more
-
- Stand out to the right audience
-
- Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. 
-
- Learn more
-
- Graphic design
- Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.
-
- Photography
- Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
-
- Client testimonials
-
- We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.
- Emily R.
- Marketing Director
-
- Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.
- Thomas S.
- Chief Operating Officer
-
- Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!
- Jennie F.
- Business Owner
-
- About
- Services
- Projects
- Contact
-
 
     <script src="main.js"></script>
   </body>
